@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">merchantshengdacar</string>
+
+    <string name="home_order">订单</string>
+    <string name="home_statistics">统计</string>
+    <string name="home_zbar">二维码</string>
+    <string name="home_code">串码</string>
+    <string name="home_setting">设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">登录</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_autologin">自动登录</string>
+    <string name="login_remember">记住密码</string>
+    <string name="login_faild">登录失败，请重新登录</string>
+    <string name="login_str_emp">用户名或密码不能为空</string>
+    <string name="str_loadmore">正在加载更多...</string>
+    <string name="str_loadmore_faild">加载失败，点击重试...</string>
+    <string name="str_loadMore_empty">没有更多数据了...</string>
+
+</resources>

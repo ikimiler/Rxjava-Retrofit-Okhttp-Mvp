@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.BUILDTOOLSVERSION
+
+    defaultConfig {
+        applicationId project.APPLICATIONID
+        minSdkVersion Integer.parseInt(project.MINSDKVERSION)
+        targetSdkVersion Integer.parseInt(project.TARGETSDKVERSION)
+        versionCode Integer.parseInt(project.VERSSIONCODE)
+        versionName project.VERSIONNAME
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            buildConfigField "boolean", "DEBUG_TOGGLE", "false"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "boolean", "DEBUG_TOGGLE", "true"
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:support-annotations:25.2.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.alibaba:fastjson:1.2.24'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+
+    //rxjava retrofit okhttp
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'io.reactivex.rxjava2:rxjava:+'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:+'
+    compile 'com.squareup.retrofit2:converter-gson:+'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.okhttp3:logging-interceptor:+'
+    compile 'io.reactivex.rxjava2:rxandroid:+'
+    compile 'com.squareup.retrofit2:converter-scalars:+'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+}

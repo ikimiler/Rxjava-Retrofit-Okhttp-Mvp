@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_order"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/home_order" />
+    <item
+        android:id="@+id/home_statistics"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/home_statistics" />
+    <item
+        android:id="@+id/home_zbar"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/home_zbar" />
+
+    <item
+        android:id="@+id/home_code"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/home_code" />
+
+    <item
+        android:id="@+id/home_setting"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/home_setting" />
+</menu>
